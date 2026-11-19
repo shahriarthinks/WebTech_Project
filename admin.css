@@ -1,0 +1,163 @@
+/* ===== Admin dashboard (Figure 4) ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+}
+
+/* ----- Header and navigation bar ----- */
+.header {
+    background-color: #d10000;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    color: white;
+    font-size: 18px;
+}
+
+.nav {
+    list-style-type: none;
+}
+
+.nav li {
+    display: inline;
+    margin-left: 18px;
+}
+
+.nav a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.nav a:hover,
+.nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* ----- Main area ----- */
+.main {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.date {
+    color: #666666;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 30px 0 12px 0;
+}
+
+/* ----- Summary cards ----- */
+.cards {
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    width: 25%;
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 18px 12px;
+}
+
+.card-title {
+    font-size: 11px;
+    color: #444444;
+    margin-bottom: 6px;
+}
+
+.card-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #c40000;
+}
+
+/* ----- Tables ----- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 13px;
+}
+
+th {
+    background-color: #e6e6e6;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-top: 1px solid #e3e3e3;
+}
+
+tr:nth-child(odd) td {
+    background-color: #fafafa;
+}
+
+tr:hover td {
+    background-color: #fdeaea;
+}
+
+.type {
+    font-weight: bold;
+}
+
+.req-id {
+    color: #666666;
+}
+
+/* Status colours */
+.available {
+    color: green;
+    font-weight: bold;
+}
+
+.low {
+    color: #c98a00;
+    font-weight: bold;
+}
+
+.critical {
+    color: #c40000;
+    font-weight: bold;
+}
+
+/* ----- Small screens (phones) ----- */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav li {
+        margin: 0 6px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 47%;
+    }
+}

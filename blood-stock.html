@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Connect | Blood Stock</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- Header with navigation bar -->
+    <div class="header">
+        <h2>Blood Bank Admin</h2>
+        <ul class="nav">
+            <li><a href="admin.html">Dashboard</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="blood-stock.html" class="active">Blood Stock</a></li>
+            <li><a href="requests.html">Requests</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <h1>Blood Stock</h1>
+        <p class="date">Units in stock for every blood group, and units that have expired.</p>
+
+        <h3>Current Blood Stock Level (All Types)</h3>
+        <table>
+            <tr>
+                <th>Blood Type</th>
+                <th>Units Available</th>
+                <th>Units Expiring This Week</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td class="type">A+</td>
+                <td>452 Units</td>
+                <td>14 Units</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td class="type">A-</td>
+                <td>87 Units</td>
+                <td>3 Units</td>
+                <td class="low">Low</td>
+            </tr>
+            <tr>
+                <td class="type">B+</td>
+                <td>321 Units</td>
+                <td>9 Units</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td class="type">B-</td>
+                <td>45 Units</td>
+                <td>2 Units</td>
+                <td class="critical">Critical</td>
+            </tr>
+            <tr>
+                <td class="type">AB+</td>
+                <td>189 Units</td>
+                <td>5 Units</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td class="type">AB-</td>
+                <td>12 Units</td>
+                <td>1 Unit</td>
+                <td class="critical">Critical</td>
+            </tr>
+            <tr>
+                <td class="type">O+</td>
+                <td>1,120 Units</td>
+                <td>20 Units</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td class="type">O-</td>
+                <td>6 Units</td>
+                <td>0 Units</td>
+                <td class="critical">Very Critical</td>
+            </tr>
+        </table>
+
+        <h3>Expired Units Removed</h3>
+        <table>
+            <tr>
+                <th>Unit ID</th>
+                <th>Blood Type</th>
+                <th>Collected On</th>
+                <th>Expired On</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td class="req-id">UNIT-5521</td>
+                <td class="type">A+</td>
+                <td>July 20, 2026</td>
+                <td>August 24, 2026</td>
+                <td class="critical">Expired</td>
+            </tr>
+            <tr>
+                <td class="req-id">UNIT-5530</td>
+                <td class="type">O+</td>
+                <td>July 22, 2026</td>
+                <td>August 26, 2026</td>
+                <td class="critical">Expired</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

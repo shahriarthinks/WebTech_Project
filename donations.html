@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Connect | Donations</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- Header with navigation bar -->
+    <div class="header">
+        <h2>Blood Bank Admin</h2>
+        <ul class="nav">
+            <li><a href="admin.html">Dashboard</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="blood-stock.html">Blood Stock</a></li>
+            <li><a href="requests.html">Requests</a></li>
+            <li><a href="donations.html" class="active">Donations</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <h1>Donations</h1>
+        <p class="date">Every donation recorded by staff at the blood bank.</p>
+
+        <h3>Recent Donations</h3>
+        <table>
+            <tr>
+                <th>Donation ID</th>
+                <th>Donor Name</th>
+                <th>Blood Type</th>
+                <th>Units</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td class="req-id">DON-3101</td>
+                <td>Sadia Mourin</td>
+                <td class="type">B+</td>
+                <td>1 Unit</td>
+                <td>August 29, 2026</td>
+                <td class="available">Completed</td>
+            </tr>
+            <tr>
+                <td class="req-id">DON-3102</td>
+                <td>Karim Uddin</td>
+                <td class="type">O+</td>
+                <td>1 Unit</td>
+                <td>August 29, 2026</td>
+                <td class="available">Completed</td>
+            </tr>
+            <tr>
+                <td class="req-id">DON-3103</td>
+                <td>Farhana Yasmin</td>
+                <td class="type">A-</td>
+                <td>1 Unit</td>
+                <td>August 28, 2026</td>
+                <td class="available">Completed</td>
+            </tr>
+            <tr>
+                <td class="req-id">DON-3104</td>
+                <td>Tanvir Hasan</td>
+                <td class="type">AB+</td>
+                <td>1 Unit</td>
+                <td>August 28, 2026</td>
+                <td class="low">Pending</td>
+            </tr>
+            <tr>
+                <td class="req-id">DON-3105</td>
+                <td>Rahim Ahmed</td>
+                <td class="type">O-</td>
+                <td>1 Unit</td>
+                <td>August 27, 2026</td>
+                <td class="critical">Rejected</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

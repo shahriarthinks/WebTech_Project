@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Connect | Create Account</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Picture (the logo is part of the picture) -->
+        <div class="image-side"></div>
+
+        <!-- The red registration panel -->
+        <div class="form-side">
+
+            <div class="language">
+                <select name="language">
+                    <option value="en">English (US)</option>
+                    <option value="bn">Bangla</option>
+                </select>
+            </div>
+
+            <h3 class="brand">Blood Bank</h3>
+            <h1>Create new <br>account <span class="arrow">&#8595;</span></h1>
+
+            <!-- For now the form goes to the login page.
+                 Later, change action to "register.php" and method to "post". -->
+            <form action="login.html" method="get">
+
+                <div class="input-box">
+                    <span class="icon">&#128100;</span>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">&#9993;</span>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="row">
+                    <div class="input-box">
+                        <span class="icon">&#128274;</span>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">&#128274;</span>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+
+                <input type="submit" class="btn" value="Create Account">
+
+            </form>
+
+            <p class="signin">Already have an account? <a href="login.html">Sign in</a></p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

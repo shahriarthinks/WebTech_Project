@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Connect | Requests</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- Header with navigation bar -->
+    <div class="header">
+        <h2>Blood Bank Admin</h2>
+        <ul class="nav">
+            <li><a href="admin.html">Dashboard</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="blood-stock.html">Blood Stock</a></li>
+            <li><a href="requests.html" class="active">Requests</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <h1>Blood Requests</h1>
+        <p class="date">Requests sent by receivers. The admin approves or rejects each one.</p>
+
+        <h3>All Blood Requests</h3>
+        <table>
+            <tr>
+                <th>Request ID</th>
+                <th>Patient Name</th>
+                <th>Hospital</th>
+                <th>Blood Type</th>
+                <th>Units</th>
+                <th>Urgency</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td class="req-id">REQ-9012</td>
+                <td>Sakib Khan</td>
+                <td>Dhaka Medical College Hospital</td>
+                <td class="type">O-</td>
+                <td>2 Units</td>
+                <td>High</td>
+                <td class="available">Approved</td>
+            </tr>
+            <tr>
+                <td class="req-id">REQ-9013</td>
+                <td>Arnob Rahman</td>
+                <td>Square Hospital</td>
+                <td class="type">AB-</td>
+                <td>1 Unit</td>
+                <td>Normal</td>
+                <td class="low">Pending</td>
+            </tr>
+            <tr>
+                <td class="req-id">REQ-9014</td>
+                <td>Rupom Sarkar</td>
+                <td>Evercare Hospital</td>
+                <td class="type">A+</td>
+                <td>3 Units</td>
+                <td>High</td>
+                <td class="low">Pending</td>
+            </tr>
+            <tr>
+                <td class="req-id">REQ-9015</td>
+                <td>Avijit Roy</td>
+                <td>BIRDEM General Hospital</td>
+                <td class="type">B-</td>
+                <td>2 Units</td>
+                <td>Normal</td>
+                <td class="critical">Rejected</td>
+            </tr>
+            <tr>
+                <td class="req-id">REQ-9016</td>
+                <td>Jamil Hasan</td>
+                <td>United Hospital</td>
+                <td class="type">O+</td>
+                <td>4 Units</td>
+                <td>High</td>
+                <td class="available">Approved</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Connect | Users</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- Header with navigation bar -->
+    <div class="header">
+        <h2>Blood Bank Admin</h2>
+        <ul class="nav">
+            <li><a href="admin.html">Dashboard</a></li>
+            <li><a href="users.html" class="active">Users</a></li>
+            <li><a href="blood-stock.html">Blood Stock</a></li>
+            <li><a href="requests.html">Requests</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <h1>Users</h1>
+        <p class="date">All donors, receivers, staff and medical officers in the system.</p>
+
+        <h3>All Users</h3>
+        <table>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td class="req-id">USR-1001</td>
+                <td>Sadia Mourin</td>
+                <td>sadia@example.com</td>
+                <td>Donor</td>
+                <td class="available">Active</td>
+            </tr>
+            <tr>
+                <td class="req-id">USR-1002</td>
+                <td>Arnob Rahman</td>
+                <td>arnob@example.com</td>
+                <td>Receiver</td>
+                <td class="available">Active</td>
+            </tr>
+            <tr>
+                <td class="req-id">USR-1003</td>
+                <td>Dr. Nusrat Jahan</td>
+                <td>nusrat@example.com</td>
+                <td>Medical Officer</td>
+                <td class="available">Active</td>
+            </tr>
+            <tr>
+                <td class="req-id">USR-1004</td>
+                <td>Rafiq Islam</td>
+                <td>rafiq@example.com</td>
+                <td>Staff</td>
+                <td class="available">Active</td>
+            </tr>
+            <tr>
+                <td class="req-id">USR-1005</td>
+                <td>Tanvir Hasan</td>
+                <td>tanvir@example.com</td>
+                <td>Donor</td>
+                <td class="critical">Suspended</td>
+            </tr>
+            <tr>
+                <td class="req-id">USR-1006</td>
+                <td>Mitu Akter</td>
+                <td>mitu@example.com</td>
+                <td>Receiver</td>
+                <td class="low">Pending</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

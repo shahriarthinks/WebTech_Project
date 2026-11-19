@@ -1,0 +1,215 @@
+/* ===== Registration, Login and Forgot Password pages (Figures 2 and 3) ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* The page is split into two halves */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ----- Picture half ----- */
+.image-side {
+    width: 50%;
+    background-color: #eeeeee;
+    background-image: url("images/register-side.jpg");
+    background-size: cover;
+    background-position: center top;
+}
+
+/* ----- Red form panel ----- */
+.form-side {
+    width: calc(50% + 40px);         /* 40px extra because of the overlap */
+    background-color: #d63a3f;
+    padding: 50px 70px;
+    border-radius: 80px 0 0 80px;   /* rounded edge like the design */
+    margin-left: -40px;              /* overlaps the picture a little */
+    position: relative;
+}
+
+.language {
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.language select {
+    background: none;
+    border: none;
+    color: #222222;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.brand {
+    color: #1a1a1a;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+}
+
+.arrow {
+    color: #4b6b5a;
+    font-size: 36px;
+}
+
+/* ----- Form ----- */
+form {
+    max-width: 420px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Small icon inside each input */
+.icon {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 12px 12px 42px;
+    background-color: transparent;
+    border: 1px solid #7a1e22;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+}
+
+.input-box input::placeholder {
+    color: #f3c6c8;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: white;
+}
+
+/* Password and Confirm Password side by side */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row .input-box {
+    width: 50%;
+}
+
+.btn {
+    display: block;
+    width: 140px;
+    margin: 25px auto 25px auto;
+    padding: 10px;
+    background-color: #a10e12;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #7a0a0d;
+}
+
+.signin {
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.signin a {
+    color: white;
+    font-weight: normal;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.signin a:hover {
+    text-decoration: underline;
+}
+
+/* ----- Login page: red panel on the LEFT, picture on the RIGHT ----- */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse .image-side {
+    background-image: url("images/login-side.jpg");
+}
+
+.reverse .form-side {
+    margin-left: 0;
+    margin-right: -40px;
+    border-radius: 0 80px 80px 0;
+}
+
+/* "Remember me" and "Forgot Password?" on one line */
+.options {
+    display: flex;
+    justify-content: space-between;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.options a {
+    color: white;
+    font-weight: bold;
+}
+
+.small-text {
+    color: #fbe3e4;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* ----- Small screens (phones) ----- */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        background-color: #d63a3f;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .image-side {
+        width: 100%;
+        height: 220px;
+    }
+
+    .form-side {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0;
+        padding: 30px 25px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+}

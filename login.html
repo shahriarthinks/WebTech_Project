@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Connect | Login</title>
+    <!-- The login page uses the same CSS file as the registration page -->
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <!-- "reverse" puts the red panel on the left and the picture on the right -->
+    <div class="container reverse">
+
+        <!-- Picture -->
+        <div class="image-side"></div>
+
+        <!-- The red login panel -->
+        <div class="form-side">
+
+            <div class="language">
+                <select name="language">
+                    <option value="en">English (US)</option>
+                    <option value="bn">Bangla</option>
+                </select>
+            </div>
+
+            <h3 class="brand">&#129656; Blood Bank</h3>
+            <p class="small-text">Hi Welcome Back!</p>
+            <h1>Sign in to <br>account <span class="arrow">&#8595;</span></h1>
+
+            <!-- For now the form opens the admin dashboard.
+                 Later, change action to "login.php" and method to "post". -->
+            <form action="admin.html" method="get">
+
+                <div class="input-box">
+                    <span class="icon">&#128100;</span>
+                    <input type="text" id="username" name="username" placeholder="Username or Email Address" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">&#128274;</span>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                <div class="options">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                    <a href="forgot-password.html">Forgot Password?</a>
+                </div>
+
+                <input type="submit" class="btn" value="Login">
+
+            </form>
+
+            <p class="signin">Don't have an account? <a href="register.html">Create Account</a></p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
